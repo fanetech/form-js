@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.form-container{
+    margin: 10px 0;
+}
+form{
+    margin: 10px 0;
+    width: 50%;
+   
+}
+.pic{
+    width: 50%;
+}
+
+
+legend{
+    padding: 10px;
+    background: rgba(28, 2, 53, 0.356);
+    border: 1px solid rgba(28, 2, 53, 0.356);
+    border-radius: 20px;
+}
+.error{
+    text-align: center;
+    background: rgba(255, 0, 0, 0.096);
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid rgba(255, 0, 0, 0.096);
+    border-radius: 5px;
+    display: none;
+}
+.success{
+    text-align: center;
+    background: rgba(0, 255, 0, 0.096);
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid rgba(0, 255, 0, 0.096);
+    border-radius: 5px;
+    display: none;
+}
