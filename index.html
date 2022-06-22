@@ -8,13 +8,17 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Nous contacter</h1>
+    <div class="container">
+
+    
     <div class="form-container">
 
    
     <h5 class="success"></h5>
     <h5 class="error"></h5>
     
-    <form  action="" onsubmit="return validatorForm()">
+    <form  action="" id="formSubmit">
         <fieldset>
             <legend>Coordonnée</legend>
             <table>
@@ -25,25 +29,32 @@
                     </td>
                     <td>
                         <input type="text" name="name" id="name">
+
                     </td>
                 </tr>
+                
                 <tr>
                     <td>
-                        <label for="email">email</label>
+                        <label for="email">Email</label>
                     </td>
                     <td>
                         <input type="email" name="email" id="email">
                     </td>
                 </tr>
+                
                </tbody>
+               
             </table>
-            <input type="submit" value="Envoyé" id="btn" onclick="handleClick()">
+            <input type="submit" value="Envoyer" id="btn" >
         </fieldset>
+
     </form>
+    
 </div>
     <div class="pic">
         <img src="./assets/img/pic-bac.jpg" alt="pic-bac">
     </div>
+</div>
     
     <script src="./index.js"></script>
 </body>
