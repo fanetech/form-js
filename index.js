@@ -16,17 +16,21 @@ const validatorForm = (e) =>{
         if(!email.value && !name.value){
         error.innerHTML = "Veuillez renseigner tous les champs" 
         error.style.display='block'
-        }
-        if(!email.value){
-            error.innerHTML = "Veuillez renseigner votre email" 
-            error.style.display='block'
-    
-        }
-        if(!name.value){
+        }else{
+
+            if(!email.value){
+                error.innerHTML = "Veuillez renseigner votre email" 
+                error.style.display='block'
+                
+            }else{
+                if(!name.value){
             error.innerHTML = "Veuillez renseigner votre nom" 
             error.style.display='block'
     
         }
+            }
+        }
+        
     }
     else{
         success.innerHTML = "Information valide" 
